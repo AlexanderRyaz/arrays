@@ -2,8 +2,11 @@ public class Main {
     public static void main(String[] args) {
         int[] arrays = new int[3];
         arrays[0] = 1; arrays[1] = 2; arrays[2] = 3;
-        for (int i = arrays.length - 1; i >= 0; i--) {
-            System.out.print(arrays[i] + ","); }
+        for (int i = 0; i < arrays.length; i++) {
+            if (i % 2 == 0) {
+                System.out.print(arrays[i] + 1 + ",");
+            }
+        }
 
         System.out.println();
 
